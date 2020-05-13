@@ -1,0 +1,24 @@
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #292F36;
+}
+
+.todo-item{
+    display:  flex;
+    justify-content: space-between;
+}
+
+/* Removes ability to click on icon which prevented button click */
+.fa-trash, .fa-check
+{
+    pointer-events: none;
+}
+
+.fall
+{
+    transition: all 0.5s ease;
+    transform: translateX(-50rem);
+    opacity: 0;
+}

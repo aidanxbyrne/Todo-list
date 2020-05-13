@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <title>To Do List</title>
+
+    </head>
+
+    <body>
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <div class="card card-body mt-5" id="game">
+
+                            <!-- TITLE -->
+                            <h1 class="heading display-5 pb-3 text-center font-weight-bold">To do List</h1>
+
+                            <!--FORM -->
+                            <form id="todo-form">
+                                <label for="task-input" class="ml-4">New Task</label>
+
+                                <div class="form-row d-flex justify-content-center mb-3">
+                                    <div class="col-md-9">
+                                        <input type="text" class="todo-input form-control" id="task-input" placeholder="New Task">
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <button type="submit" class="todo-button btn btn-primary w-100">
+                                            <i class="fas fa-plus-square"></i>
+                                        </button>
+                                    </div>
+                                    
+                                </div>
+                            </form>
+
+                            <!-- TODO FILTER -->
+                            <div class="select input-group d-none col-md-3 mb-2 mt-3">
+                                <select class="todo-filter custom-select" id="inputGroupSelect01">
+                                    <option value="all">All</option>
+                                    <option value="completed">Completed</option>
+                                    <option value="uncompleted">Uncompleted</option>
+                                </select>
+                             </div>
+
+                             <!-- TODO LIST -->
+                            <div class="todo-container col-md-12">
+                                <ul class="todo-list flex-column d-flex list-group"></ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+
+</html>
